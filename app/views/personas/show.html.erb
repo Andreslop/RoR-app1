@@ -1,0 +1,13 @@
+<h2><%= @persona.nombre %> <%= @persona.apellido %></h2>
+<div class="">
+  <span>Edad:<%= @persona.edad %> años</span>
+</div>
+<div class="">
+  <span>Email: <%= @persona.email %></span>
+</div>
+<div class="">
+  <%= link_to "Volver", personas_path %>
+</div>
+<div class="">
+  <%= link_to "Eliminar", @persona , method: :delete, data: { confirm: "¿Estas seguro?" } %>
+</div>

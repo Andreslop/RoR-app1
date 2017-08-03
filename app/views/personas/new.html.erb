@@ -1,0 +1,21 @@
+<%= form_for @persona, url: {action: "create"} do |f| %>
+  <div class="">
+    <%= f.label :nombre %>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="">
+    <%= f.label :apellido %>
+    <%= f.text_field :apellido %>
+  </div>
+  <div class="">
+    <%= f.label :edad %>
+    <%= f.number_field :edad %>
+  </div>
+  <div class="">
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+  <div class="">
+    <%= f.submit "Create" %>
+  </div>
+<% end %>
